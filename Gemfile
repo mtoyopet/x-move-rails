@@ -30,6 +30,7 @@ gem 'devise_token_auth'
 gem 'rack-cors'
 gem 'omniauth-twitter'
 gem 'rb-readline'
+gem 'uglifier'
 
 
 group :development, :test do
