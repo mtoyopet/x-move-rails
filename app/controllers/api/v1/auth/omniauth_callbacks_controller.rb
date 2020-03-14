@@ -3,7 +3,7 @@ module Api
     module Auth
       class OmniauthCallbacksController < DeviseTokenAuth::OmniauthCallbacksController
 
-        # // ①セッションを有効化
+        # // ①セッションを有効化    
         skip_before_action :skip_session
 
 

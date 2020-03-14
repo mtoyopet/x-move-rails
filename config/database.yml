@@ -75,11 +75,12 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
   <<: *default
-  database: instant_tween_twitter_login_production
-  username: instant_tween_twitter_login
-  password: <%= ENV['INSTANT_TWEEN_TWITTER_LOGIN_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+#
+# production:
+#   <<: *default
+#   database: instant_tween_twitter_login_production
+#   username: instant_tween_twitter_login
+#   password: <%= ENV['INSTANT_TWEEN_TWITTER_LOGIN_DATABASE_PASSWORD'] %>
