@@ -19,9 +19,9 @@ module InstantTweenTwitterLogin
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
 
-    config.generators do |g|
-      g.assets false
-    end
+    # config.generators do |g|
+    #   g.assets false
+    # end
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
